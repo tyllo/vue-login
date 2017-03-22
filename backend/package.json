@@ -1,0 +1,55 @@
+{
+  "name": "backend",
+  "version": "0.0.1",
+  "description": "Server-side application with Koa2",
+  "private": true,
+  "license": "MIT",
+  "keywords": [
+    "koa2",
+    "example"
+  ],
+  "author": "Andrey Pastukhov <gmtyllo@gmail.com>",
+  "main": "index.js",
+  "dependencies": {
+    "debug": "^2.6.1",
+    "koa": "^2.0.1",
+    "koa-bodyparser": "^4.1.0",
+    "koa-convert": "^1.2.0",
+    "koa-csrf": "^3.0.4",
+    "koa-generic-session": "^1.11.5",
+    "koa-json": "^2.0.2",
+    "koa-router": "^7.0.1",
+    "koa-views": "^6.0.0",
+    "pug": "^2.0.0-beta11"
+  },
+  "scripts": {
+    "debug": "nodemon --inspect=33668 --debug-brk index.js",
+    "dev": "cross-env DEBUG=app:server NODE_ENV=development npm run start",
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.0",
+    "babel-plugin-module-resolver": "^2.5.0",
+    "babel-preset-env": "^1.2.2",
+    "babel-register": "^6.24.0",
+    "babel-resolver": "^1.1.0",
+    "cross-env": "^3.2.4",
+    "eslint": "^3.17.0",
+    "eslint-config-standard": "^7.0.0",
+    "eslint-plugin-babel": "^4.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-pug": "^1.0.0",
+    "eslint-plugin-standard": "^2.1.1",
+    "koa-logger": "^2.0.1",
+    "koa-onerror": "^3.1.0",
+    "koa-static": "^3.0.0",
+    "pug-lint": "^2.4.0",
+    "pug-lint-config-clock": "^2.0.0"
+  },
+  "engines": {
+    "node": ">= 7.7.1",
+    "nodemon": ">= 1.11.0"
+  }
+}

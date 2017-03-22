@@ -1,0 +1,6 @@
+{
+  "puglint.enable": true,
+  "eslint.enable": true,
+  "editor.tabSize": 2,
+  "files.eol": "\n"
+}

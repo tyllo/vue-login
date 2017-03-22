@@ -1,0 +1,7 @@
+if assets && Array.isArray(assets.styles)
+  each href in assets.styles
+    link(rel='stylesheet', href=href)
+
+if assets && Array.isArray(assets.scripts)
+  each src in assets.scripts
+    script(src=src defer)

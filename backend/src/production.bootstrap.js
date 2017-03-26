@@ -11,8 +11,11 @@ app.keys = config.session.keys
 
 // middlewares
 Object.values(middlewares).forEach(app.use.bind(app))
+
+// routes
 app.use(router.routes())
 app.use(router.allowedMethods())
+
 onerror(app)
 
 export default app

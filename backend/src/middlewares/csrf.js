@@ -11,5 +11,6 @@ export const csrfInstance = new CSRF({
 
 export async function csrfHandler (ctx, next) {
   ctx.state.csrf = ctx.csrf
+  ctx.response.set('Csrf-Token', ctx.csrf)
   await next()
 }

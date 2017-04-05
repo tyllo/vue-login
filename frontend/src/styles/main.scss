@@ -1,0 +1,29 @@
+@import '~@/styles/vars';
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: var(--main-fonts);
+  line-height: 1.25;
+  margin: 0;
+  color: var(--color-text);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+  outline-width: 0;
+}

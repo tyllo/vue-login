@@ -1,0 +1,16 @@
+{
+  "puglint.enable": true,
+  "stylelint.enable": true,
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "vue"
+  ],
+  "emmet.syntaxProfiles": {
+    "vue-html": "html",
+    "vue": "html"
+  },
+  "css.validate": false,
+  "editor.tabSize": 2,
+  "files.eol": "\n"
+}

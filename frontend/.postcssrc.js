@@ -1,8 +1,22 @@
-// https://github.com/michael-ciniawsky/postcss-load-config
-
 module.exports = {
-  "plugins": {
-    // to edit target browsers: use "browserlist" field in package.json
-    "autoprefixer": {}
+  plugins: {
+    autoprefixer: {
+      env: process.env.NODE_ENV,
+      cascade: false,
+    },
+    'postcss-font-magician': {
+      formats: 'woff2 woff',
+      variants: {
+        Roboto: {
+          '300': [],
+          '400': [],
+          '700': [],
+      }
+      },
+    },
+    'postcss-css-variables': {
+      preserve: 'computed',
+    },
+    'postcss-merge-rules': {},
   }
 }

@@ -2,6 +2,8 @@ var path = require('path')
 var utils = require('./utils')
 var config = require('../config')
 var vueLoaderConfig = require('./vue-loader.conf')
+var AsyncModulePlugin = require('async-module-loader/plugin')
+var webpack = require('webpack')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -14,6 +16,7 @@ module.exports = {
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
+    chunkFilename: '[name].chunk.js',
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
@@ -62,5 +65,13 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  resolveLoader: {
+    alias: {
+      async: 'async-module-loader'
+    },
+    moduleExtensions: ['-loader'],
+  },
+  plugins: [
+    new AsyncModulePlugin(),
 }

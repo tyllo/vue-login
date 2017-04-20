@@ -1,0 +1,16 @@
+auth-form.login-form(action=''
+  name='login-form', @submit.prevent='onSubmit')
+
+  input.uk-input(
+    type='text', name='username', required
+    placeholder='username', v-model.trim='username')
+
+  router-link.reset.uk-float-right(
+    :to='{ name: "reset-password" }') Forgot password?
+
+  input.uk-input.uk-margin-small-bottom(
+    type='password', name='password', required
+    placeholder='password', v-model.trim='password')
+
+  button.submit.uk-button.uk-button-primary.uk-width-1-1(
+    type='submit', :disabled='disabled') Login

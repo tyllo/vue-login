@@ -1,7 +1,8 @@
 $color-text: #2c3e50;
 $main-fonts: 'Roboto', 'Avenir', Arial, Helvetica, sans-serif;
+$bg-login-image: '~@/assets/bg-login.jpg';
 
 :root {
   --color-text: $color-text;
-  --main-fonts: $main-fonts;
+  --main-box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
 }

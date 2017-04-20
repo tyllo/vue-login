@@ -1,5 +1,5 @@
 <template lang='pug'>
-  router-view
+  router-view#app
 </template>
 
 <script>
@@ -8,5 +8,8 @@
 
   class App extends Vue {}
 
-  export default Component()(App)
+  export default Component(App)
 </script>
+
+<style src='@/styles/uikit.scss' lang='scss'></style>
+<style src='@/styles/main.scss' lang='scss'></style>

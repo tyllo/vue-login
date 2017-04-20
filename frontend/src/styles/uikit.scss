@@ -1,0 +1,10 @@
+@import 'vars';
+
+// uikit custom theme
+$global-font-family: $main-fonts !default;
+$global-emphasis-color: $color-text !default;
+
+// uikit styles
+@import '~uikit/src/scss/variables-theme';
+@import '~uikit/src/scss/mixins-theme';
+@import '~uikit/src/scss/uikit-theme';

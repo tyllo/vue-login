@@ -1,0 +1,11 @@
+auth-form.reset-password-form(action=''
+  name='reset-password-form', @submit.prevent='onSubmit')
+
+  p.title.uk-margin-small Enter your email address and we will send you a link to reset your password.
+
+  input.uk-input.uk-margin-small-bottom(
+    type='text', name='username', required
+    placeholder='username', v-model.trim='username')
+
+  button.submit.uk-button.uk-button-primary.uk-width-1-1(
+    type='submit', :disabled='disabled') Send password reset email

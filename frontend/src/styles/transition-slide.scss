@@ -1,0 +1,20 @@
+$slide-length: 2rem;
+
+.slide-left-enter-active,
+.slide-left-leave-active,
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.slide-left-enter,
+.slide-right-leave-to, {
+  opacity: 0;
+  transform: translate(-$slide-length, 0);
+}
+
+.slide-left-leave-to,
+.slide-right-enter {
+  opacity: 0;
+  transform: translate($slide-length, 0);
+}

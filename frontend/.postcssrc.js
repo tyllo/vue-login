@@ -18,5 +18,6 @@ module.exports = {
       preserve: 'computed',
     },
     'postcss-merge-rules': {},
+    'postcss-color-function': {},
   }
 }

@@ -74,4 +74,19 @@ module.exports = {
   },
   plugins: [
     new AsyncModulePlugin(),
+    new webpack.optimize.CommonsChunkPlugin({
+      names: ['app'],
+      // chunks: ['auth', 'uikit'],
+      // (choose the chunks, or omit for all chunks)
+
+      // children: true,
+      // (use all children of the chunk)
+
+      async: true,
+      // (create an async commons chunk)
+
+      // minChunks: 3,
+      // (3 children must share the module before it's separated)
+    })
+  ]
 }
